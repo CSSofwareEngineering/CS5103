@@ -1,4 +1,4 @@
-package com.cs5103.project.calendar;
+package com.example.calendarapp;
 
 import java.util.ArrayList;
 import java.util.List;
