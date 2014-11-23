@@ -105,23 +105,40 @@ public class CalendarWrapper extends SQLiteOpenHelper {
 		db.execSQL("DROP TABLE IF EXISTS " + HOLIDAYS);
 		onCreate(db);
 	}
+<<<<<<< HEAD
 	//Method to populate remaining 2014 USA Holidays
 	private void enter2014Holidays(SQLiteDatabase db) {
+=======
+	//Method to populate remaining 2013 USA Holidays
+	private void enter2013Holdays(SQLiteDatabase db) {
+>>>>>>> parent of e2ffc33... Revert "database files"
 		GregorianCalendar temp = new GregorianCalendar();
 		long longDate;
 		
 		//Thanksgiving
+<<<<<<< HEAD
 		temp.set(2014, 11, 27);
+=======
+		temp.set(2013, 10, 28);
+>>>>>>> parent of e2ffc33... Revert "database files"
 		longDate = temp.getTimeInMillis();
 		db.execSQL("INSERT INTO Holidays" + HOLIDAY_TABLE_STRING +" VALUES ('Thanksgiving','"+ longDate+"' , '-1')");
 		
 		//Christmas
+<<<<<<< HEAD
 		temp.set(2014, 12, 25);
+=======
+		temp.set(2013, 11, 25);
+>>>>>>> parent of e2ffc33... Revert "database files"
 		longDate = temp.getTimeInMillis();		
 		db.execSQL("INSERT INTO Holidays" + HOLIDAY_TABLE_STRING +" VALUES ('Christmas','"+ longDate+"' , '-1')");
 		
 		//New Years
+<<<<<<< HEAD
 		temp.set(2015, 0, 01);
+=======
+		temp.set(2014, 0, 01);
+>>>>>>> parent of e2ffc33... Revert "database files"
 		longDate = temp.getTimeInMillis();
 		db.execSQL("INSERT INTO Holidays" + HOLIDAY_TABLE_STRING +" VALUES ('New Years','"+ longDate+"' , '-1')");
 				
